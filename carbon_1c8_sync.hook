@@ -1,2 +1,10 @@
 #!/bin/bash
 
+. /devel/bin/common.hook
+
+DST=$ro_image/usr/local/www/htdocs/
+echo "Изменился $PROG"
+echo "Копирую $APP/src/$PROG/* -> $DST"
+
+rsync $RSYNC_OPTS $APP/src/$PROG/* $DST
+
