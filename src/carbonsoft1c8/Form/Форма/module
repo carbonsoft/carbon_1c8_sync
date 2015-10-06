@@ -1672,10 +1672,10 @@
 	
 //АдресСервера		= "https://10.0.0.1:1443";
 //АдресСервера		= "https://asrdoc.ideco-software.ru:1443";
-	ИдГруппы			= 1;
-	АдресСервера		= "http://10.90.170.55:8082";
-	ИмяПользователя		= "pkvr33ow";
-	ПарольПользователя	= "servicemode";
+	//ИдГруппы			= 1;
+	//АдресСервера		= "http://10.90.170.55:8082";
+	//ИмяПользователя		= "pkvr33ow";
+	//ПарольПользователя	= "servicemode";
 	
 	тСинхронизации		= Новый ТаблицаЗначений;
 	тСинхронизации.Колонки.Добавить("code_asr");
@@ -1961,11 +1961,11 @@
 	 	ИмяФайла	= КаталогВременныхФайлов() + "\tmp_export_finoper_add.xml";
 		URL	= "model=FinanceOperations&method1=api_1c_manager.api_1c_sync_fin_oper";
 		Инфо = Новый СистемнаяИнформация;
-		Если Лев(Инфо.ВерсияПриложения,3)="8.2" Тогда
-			formed_params = URLEncode(form_params_str(params));
-		Иначе
-			formed_params = КодироватьСтроку(form_params_str(params), СпособКодированияСтроки.КодировкаURL);
-		КонецЕсли;
+		//Если Лев(Инфо.ВерсияПриложения,3)="8.2" Тогда
+		formed_params = URLEncode(form_params_str(params));
+		//Иначе
+			//formed_params = КодироватьСтроку(form_params_str(params), СпособКодированияСтроки.КодировкаURL);
+		//КонецЕсли;
 		URL = URL+"&arg1="+formed_params;
 		ОтправитьRestЗапрос(ИмяФайла,URL);
 
@@ -2614,5 +2614,6 @@
 
 	//xml_Закрыть(ФайлЗагрузки);
 КонецПроцедуры  
+
 
 WinHttpRequest = Новый COMОбъект("WinHttp.WinHttpRequest.5.1");
