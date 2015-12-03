@@ -1946,13 +1946,13 @@
 	Возврат data
 КонецФункции
 
-Функция ПолучитьОперации(suid,abonent_id,op_type,start_date,end_date)
+Функция ПолучитьОперации(suid,abonent_id,op_type,sdate,edate)
 	 params			= "model=FinanceOperations&method1=api_1c_manager.api_1c_get_fin_opers";
 	 args=Новый Соответствие;
 	 args["abonent_id"]=abonent_id;
 	 args["op_type"]=op_type;
-	 args["start_date"]=start_date;
-	 args["end_date"]=end_date;
+	 args["sdate"]=sdate;
+	 args["edate"]=edate;
      params=params+"&arg1="+form_params_str(args);
 	 ИмяФайла		= КаталогВременныхФайлов() + "\tmp_import_fin.xml";
 	 data=ОтправитьRestЗапрос(ИмяФайла,params);
