@@ -3,8 +3,9 @@
 . /devel/bin/common.hook
 
 DST=$ro_image/usr/local/www/htdocs/
+DST2=$ro_image/usr/local/www/htdocs/http
 echo "Изменился $PROG"
 echo "Копирую $APP/src/$PROG/* -> $DST"
 
-rsync $RSYNC_OPTS $APP/src/$PROG/* $DST
-
+rsync $RSYNC_OPTS $APP/src/$PROG/*.epf $DST
+rsync $RSYNC_OPTS $APP/src/$PROG/*.epf $DST2
