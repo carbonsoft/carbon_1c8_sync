@@ -1,4 +1,4 @@
-﻿Перем WinHttpRequest;
+﻿﻿Перем WinHttpRequest;
 перем xml_fso;
 
 Перем тСчетаДляВыгрузки;

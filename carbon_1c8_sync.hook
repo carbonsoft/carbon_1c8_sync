@@ -2,10 +2,10 @@
 
 . /devel/bin/common.hook
 
-DST=$ro_image/usr/local/www/htdocs/
-DST2=$ro_image/usr/local/www/htdocs/http
+DST=$ro_image/usr/local/www/sites/static/admin/1c
 echo "Изменился $PROG"
 echo "Копирую $APP/src/$PROG/* -> $DST"
 
+mkdir -p $DST
 rsync $RSYNC_OPTS $APP/src/$PROG/*.epf $DST
-rsync $RSYNC_OPTS $APP/src/$PROG/*.epf $DST2
+
