@@ -1,0 +1,9 @@
+﻿342a65b2-5e38-43a7-ae6e-b8b7d9b8a59b-->und\342a65b2-5e38-43a7-ae6e-b8b7d9b8a59b
+342a65b2-5e38-43a7-ae6e-b8b7d9b8a59b.0-->Form\Форма
+90476407-2ccd-407d-9091-9b42194be52c.0\info-->D:\temp\carbonsoft1c83_3.epf.und\90476407-2ccd-407d-9091-9b42194be52c.0\info
+90476407-2ccd-407d-9091-9b42194be52c.0\text-->ObjectModule.txt
+copyinfo-->und\copyinfo
+de08fc4e-7a13-40a0-b350-5579d8eddbe3-->und\de08fc4e-7a13-40a0-b350-5579d8eddbe3
+root-->und\root
+version-->und\version
+versions-->und\versions
