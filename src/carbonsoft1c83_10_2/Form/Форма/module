@@ -307,7 +307,7 @@
 	 	ИмяФайла	= КаталогВременныхФайлов() + "\tmp_export_finoper_add.xml";
 		URL	= "model=FinanceOperations&method1=api_1c_manager.api_1c_sync_fin_oper";
 		Инфо = Новый СистемнаяИнформация;
-		formed_params = URLEncode(form_params_str(params));
+		formed_params = КодироватьСтроку(form_params_str(params), СпособКодированияСтроки.КодировкаURL);
 		URL = URL+"&arg1="+formed_params;
 		ОтправитьRestЗапрос(ИмяФайла,URL);
 КонецФункции
